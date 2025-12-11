@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFarmAccelerator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./contact-service.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fas fa-map-marker-alt"></i> Ondo State, Nigeria</span>
+            <span><i class="far fa-envelope"></i> </span>
+            <span><i class="fas fa-phone-alt"></i> +234 703 651 8852</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-times"></i></a> </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="grid-icon"><i class="fas fa-th"></i></div>
+            <img src="https://placehold.co/120x60/png?text=Agri+Logo" alt="Agri Innovation Hub Logo" class="logo-img">
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="floating-nav-container" id="stickyNav">
+            <nav>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        
+        <div class="mobile-nav-menu" id="mobileMenu">
+            </div>
+
+        <div class="header-cta">
+            <a href="#" class="btn btn-dark-green">Join Our Community <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="about-section">
+            <div class="about-form">
+                <h2>Send us a Message</h2>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+
+                    <label for="organisation">Organisation:</label>
+                    <input type="text" id="organisation" name="organisation" placeholder="Your Organisation or Clinic" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <div id="textshow"></div>
+
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+            <div class="about-contact">
+                <h2>Direct Contact Info</h2>
+                <div class="about-social">
+                    <div class="social-container">
+                        <i class="fas fa-envelope"></i>
+                        <div class="social-info">
+                            <h5>Email</h5>
+                            <p>hello@novabuk.com</p>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <i class="fas fa-phone"></i>
+                        <div class="social-info">
+                            <h5>Phone</h5>
+                            <p>+234 813 468 4154</p>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <i class="fas fa-globe"></i>
+                        <div class="social-info">
+                            <h5>Website</h5>
+                            <p>www.novabuk.com</p>
+                        </div>
+                    </div>
+                </div>
+                <h4>Follow & Connect</h4>
+                <div class="info-icon">
+                    <p>Stay updated with our latest news and developments</p>
+                    <div class="icon-about">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>  
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>@NovaBukOfficial</p>
+                </div>
+                <h3>Ready to get Started?</h3>
+                <p>Join our pilot program and be among to experience the future of digital healthcare in Africa</p>
+
+                <div class="talk-session">
+                    <a href="">Talk With Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-foot">
+                        <img src="./images/logo.png" alt="Logo" />
+                    </div>
+                    <p>Where Technology meets Care. Empowering Africa's Healthcare with AI-driven Digital Records.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./services.html">Features</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i> +234 813 468 4154</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@novabuk.com</li>
+                        <li><i class="fa-solid fa-globe"></i> www.novabuk.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="line"></div>
+                <p><i class="fa-regular fa-copyright"></i> 2025 NovaBuk HealthTech. All rights reserved.</p>
+            </div>
+    </footer>
+</body>
+</html>    

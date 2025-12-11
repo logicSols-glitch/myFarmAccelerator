@@ -103,67 +103,95 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const revealItems = document.querySelectorAll('.slide-left, .slide-right');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+revealItems.forEach(item => observer.observe(item));
 
 // 1. Intersection Observer Logic for Scroll-In Animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                root: null, // relative to the viewport
-                rootMargin: '0px',
-                threshold: 0.1 // trigger when 10% of the element is visible
-            };
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null, // relative to the viewport
+            rootMargin: '0px',
+            threshold: 0.1 // trigger when 10% of the element is visible
+        };
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Element is in view, make it visible
-                        entry.target.classList.add('is-visible');
-                        // Stop observing once visible to prevent re-triggering
-                        observer.unobserve(entry.target); 
-                    }
-                });
-            }, observerOptions);
-
-            // Select all elements that should reveal
-            const revealElements = document.querySelectorAll('.reveal-element');
-            
-            // Observe each element
-            revealElements.forEach(element => {
-                observer.observe(element);
-            });
-
-
-            // 2. Mobile menu toggle logic
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const desktopMenu = document.getElementById('desktop-menu');
-
-            // Populate mobile menu content initially
-            // Replaces Tailwind-like classes with standard CSS properties for flexbox and spacing.
-            const linksHtml = Array.from(desktopMenu.children).map(link => 
-                `<a href="${link.getAttribute('href')}" style="display: block; padding: 0.75rem 1rem; margin: 0 1rem; border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-weight: 600; color: #4b5563; text-decoration: none;">${link.textContent}</a>`
-            ).join('');
-            
-            mobileMenu.innerHTML = `<div style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 0;">${linksHtml}</div>`;
-            
-            const allLinks = mobileMenu.querySelectorAll('a');
-            allLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    toggleMobileMenu(true); // Pass true to force close
-                });
-            });
-
-
-            function toggleMobileMenu(forceClose = false) {
-                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-                
-                if (!isExpanded || forceClose) {
-                    mobileMenu.classList.add('menu-open');
-                    mobileMenuButton.setAttribute('aria-expanded', 'true');
-                } else {
-                    mobileMenu.classList.remove('menu-open');
-                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Element is in view, make it visible
+                    entry.target.classList.add('is-visible');
+                    // Stop observing once visible to prevent re-triggering
+                    observer.unobserve(entry.target); 
                 }
-            }
+            });
+        }, observerOptions);
 
-            mobileMenuButton.addEventListener('click', () => toggleMobileMenu(false));
+        // Select all elements that should reveal
+        const revealElements = document.querySelectorAll('.reveal-element');
+        
+        // Observe each element
+        revealElements.forEach(element => {
+            observer.observe(element);
         });
+
+
+        // 2. Mobile menu toggle logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const desktopMenu = document.getElementById('desktop-menu');
+
+        // Populate mobile menu content initially
+        // Replaces Tailwind-like classes with standard CSS properties for flexbox and spacing.
+        const linksHtml = Array.from(desktopMenu.children).map(link => 
+            `<a href="${link.getAttribute('href')}" style="display: block; padding: 0.75rem 1rem; margin: 0 1rem; border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-weight: 600; color: #4b5563; text-decoration: none;">${link.textContent}</a>`
+        ).join('');
+        
+        mobileMenu.innerHTML = `<div style="display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 0;">${linksHtml}</div>`;
+        
+        const allLinks = mobileMenu.querySelectorAll('a');
+        allLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu(true); // Pass true to force close
+            });
+        });
+
+
+        function toggleMobileMenu(forceClose = false) {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            
+            if (!isExpanded || forceClose) {
+                mobileMenu.classList.add('menu-open');
+                mobileMenuButton.setAttribute('aria-expanded', 'true');
+            } else {
+                mobileMenu.classList.remove('menu-open');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        mobileMenuButton.addEventListener('click', () => toggleMobileMenu(false));
+    });
+
+
+        
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll('.pop');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});

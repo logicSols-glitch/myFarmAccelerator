@@ -1,7 +1,7 @@
 *{
     margin :0;
     padding: 0;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
 }
 
 :root {
@@ -134,19 +134,20 @@ a { text-decoration: none; }
 .hero-section {
     padding: 100px 5% 50px 5%;
     display: flex;
-    justify-content: space-between;
+    gap: 22px;
     height: auto;
 }
 .hero-section .hero-prtOne{
     /* padding: 100px 5% 50px 5%; */
-    width: 100%;
+    width: 80%;
+    line-height: 2rem;
 }
 .hero-btns{
     margin-top: 30px;
 }
 .hero-img img{
     
-  max-width: 500px; /* adjust as needed */
+  max-width: 430px; /* adjust as needed */
   width: 100%;
     position: relative;
   border-radius: 8px;
@@ -184,52 +185,39 @@ a { text-decoration: none; }
     margin: 0px 0px 90px 50px;
 }
 .main-img{
-    /* width: 450px; */
+    flex: 1 1 300px; /* Allow flexibility */
+    max-width: 350px;
+    position: relative;
+    box-sizing: border-box;
+    /* Common styles for the bg images */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 400px; /* Fixed height for consistency */
+    padding: 20px;
+    display: flex;
+    padding: 370px 30px 80px 1px;
+    flex-direction: column;
+    /* justify-content: flex-end; */
 }
 .img-bg1{
     background-image: url(./image/man-phone.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    width: 300px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 10px;
-    padding: 370px 30px 80px 1px;
+    
     border: 1px solid #ebebeb;
-    /* box-shadow: 0 4px 8px green; */
-    /* border-radius: 1px; */
 }
 .img-bg2{
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    width: 300px;
-    height: 10px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 10px;
-    padding: 370px 30px 80px 1px;
+    
     /* box-shadow: 0 4px 8px green; */
     background-image: url(./image/man2.jpg);
 }
 .img-bg3{
     background-image: url(./image/woman.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    width: 300px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 10px;
     padding: 370px 30px 80px 1px;
-    /* box-shadow: 0 2px 2px green; */
+    
 }
 .main-img .img-caption h2{
     margin: 0px 0px 20px 10px;
@@ -243,171 +231,125 @@ a { text-decoration: none; }
 }
 
 /* ABOUT SECTION */
-.reveal-element{
-    text-align: center;
-    font-family: "poppins", sans-serif;
-}
-.about{
-    padding: 20px 40px;
-    text-align: center;
-}
-.text-center h2{
-    text-align: center;
-    font-weight: 600; 
-    text-transform: uppercase; 
-    letter-spacing: 0.1em;
-    align-items: center;
-    /* margin-bottom: 10px; */
-    font-size: 16px;
-    font-family: "poppins", sans-serif;
-    padding: 10px;
-    color: gold;
-}
- .about h3{
-    font-size: 40px;
-    color: #222;
-    font-family: "poppins", sans-serif;
- }
-.about-details{
-    color: #333;
-    margin: 20px 150px;
-    font-family: "Lora",serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    line-height: 2.5em;
-    gap: 40px;
-}
-.reveal-element0-1{
-    display: grid;
-    text-align: center;
-    /* width: 55%; */
-    line-height: 1.9em;
-   
-}
-.reveal-element0-1 p{
-    font-family: "poppins", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    /* color: #fff; */
-    font-size: 18px;
-}
-.quote{
-    border-left: 4px solid rgb(194, 174, 60);
-    border-right: 4px solid rgb(194, 174, 60);
-    font-family: "lora",serif;
-    font-weight: 600;
-    padding: 10px 0px 10px 5px;
-    background-color: #fffdfd;
-    font-style: italic;
-    margin: 15px 50px;
-}
-.Promise{
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: #135a37;
-    font-size: 18px;
-}
-.reveal-element-delay-0-2{
-    text-align: center;
-    padding: 20px 10px;
-    width: 100%;
-    border: 1px 1px 1px 1px solid blue;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px white;
-    border-top: 8px solid green; 
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: #fff;
-}
-.reveal-element-delay-0-2 h4{
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: green;
-}
-.text-md li{
-    list-style: none;
-}
-.w-5{
-    color: rgba(204, 177, 22, 0.9);
-}
-.font-flex{
-    display: grid;
-}
-.items-start{
-    margin-bottom: 3px;
-}
+ .about { padding: 50px 5%; text-align: center; box-sizing: border-box;}
+        #about .about-hero {
+            display: flex;
+            gap: 50px;
+            padding: 40px 0;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .about-hero img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+             box-sizing: border-box;
+        }
+        .about-hero-text h3 { font-size: 30px; margin-bottom: 20px; color: #222; }
+        .about-hero-text p { font-size: 18px; line-height: 1.8; margin-bottom: 20px; color: var(--light-text); }
+        #about .about-hero .about-hero-text a {
+            text-decoration: underline;
+            color: var(--dark-green);
+            font-family: "poppins", serif;
+            font-size: 18px;
+            font-weight: 600;
+        }
 
-.font-head{
-    border: 1px solid gold;
-    /* padding: 80px; */
-    text-align: center;
-}
+        .text-center h2 {
+            text-align: center; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.1em; font-size: 16px;
+            font-family: "poppins", sans-serif; padding: 10px; color: gold;
+        }
+        .about h3.section-title { font-size: 40px; color: #222; font-family: "poppins", sans-serif; margin-bottom: 40px;}
 
-/* --- Mission & Vision Section Styles --- */
-.mv-section {
-    display: flex;
-    /* justify-content: center; */
-    gap: 25px; /* Space between the two blocks */
-    padding: 5px 5%;
-    text-align: left;
-    /* background-color: #fff; */
-}
+        .about-details {
+            color: #333;
+            margin: 40px auto;
+            max-width: 800px;
+            font-family: "Lora", serif;
+            text-align: center;
+            display: grid;
+            gap: 40px;
+             box-sizing: border-box;
+        }
+        .reveal-element0-1 p {
+            font-family: "poppins", serif; font-weight: 400; font-size: 18px; line-height: 1.9em; color: var(--light-text);
+        }
+        .quote {
+            border-left: 4px solid rgb(194, 174, 60);
+            border-right: 4px solid rgb(194, 174, 60);
+            font-family: "lora", serif; font-weight: 600; font-size: 20px;
+            padding: 20px 30px; background-color: #fffdfd; font-style: italic; margin: 15px auto;
+             box-sizing: border-box;
+        }
+        .Promise { font-family: "Lora", serif; color: #135a37; font-size: 18px; }
+        .reveal-element-delay-0-2.promise-box {
+            text-align: center; padding: 30px; width: auto; max-width: 600px; margin: 0 auto;
+            border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 8px solid var(--dark-green); background-color: #fff;
+             box-sizing: border-box;
+        }
+        .reveal-element-delay-0-2.promise-box h4 { font-size: 24px; margin-bottom: 15px; color: var(--dark-green); }
 
-.mv-block {
-    padding: 60px 100px 100px 50px;
-    /* max-width: 1900px; */
-    border: 1px solid rgb(142, 201, 142);
-    border-radius: 15px;
-    font-family: "Poppins", sans-serif;
-    color: #ebebeb;
-    background: linear-gradient(135deg, rgb(40,78,25));
-}
-.mv-bloc{
-    border: 1px solid red;
-}
-/* The BIG Icon Style */
-.big-icon {
-    font-size: 2rem; /* Makes them very big */
-    color: #fff; /* Uses the green from your header */
-    margin-bottom: 25px;
-    /* margin-left: 6px; */
-    display: inline-block;
-}
+        /* --- Our Values --- */
+        .about-core {
+            padding: 80px 5%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+            box-sizing: border-box;
+        }
+        .our-value-context {
+            flex: 1;
+            max-width: 400px;
+            text-align: left;
+        }
+        .our-value-context h2 { color: gold; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; }
+        .our-value-context p { font-size: 35px; line-height: 1.3; font-weight: 700; color: #222; margin-top: 10px;}
 
-.mv-block h3 {
-    font-size: 25px;
-    text-align: left;
-    /* margin-left: 6px; */
-    margin-bottom: 15px;
-    width: 100%;
-    font-family: "lora", serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 40px;
-}
+        .about-list { display: flex; flex-direction: column; gap: 30px; flex: 1; max-width: 600px;  box-sizing: border-box;}
+        .about-list li { list-style: none; }
+        .about-list .items-start {
+            display: flex; align-items: flex-start; gap: 20px;
+            border: 1px solid #eee; padding: 30px; border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); background: #fff;
+             box-sizing: border-box;
+             transition: transform 0.3s;
+        }
+        .about-list .items-start:hover { transform: translateY(-5px); }
+        .items-start i { color: rgba(204, 177, 22, 0.9); font-size: 2.5rem; margin-top: 5px;}
+        .about-list .items-start .font-heading h4 { font-size: 20px; margin-bottom: 10px; color: var(--dark-green);}
+        .about-list .items-start .font-heading p { color: var(--light-text); line-height: 1.6; }
 
-.mv-block p {
-    color: var(--light-text);
-    text-align: left;
-    line-height: 1.6;
-    /* margin-left: 10px; */
-    font-size: 16px;
-    color: #fff;
-}
-.services{
-    font-family: "poppins", sans-serif;
-    color: #222;
-}
-.services p{
-    margin-bottom: 50px;
-    margin-top: 30px;
-    font-weight: 500;
-    font-family: "lora", serif;
-}
+
+        /* --- Mission & Vision Section --- */
+        .mv-section {
+            display: flex; justify-content: center; gap: 30px; padding: 80px 5%; flex-wrap: wrap; box-sizing: border-box;
+        }
+        .mv-block {
+            flex: 1 1 400px; max-width: 600px;
+            padding: 60px 40px;
+            border-radius: 15px; font-family: "Poppins", sans-serif; color: #ebebeb;
+            background: linear-gradient(135deg, var(--dark-green), #1a4430);
+            box-sizing: border-box;
+        }
+        .big-icon { font-size: 3rem; color: #fff; margin-bottom: 25px; display: inline-block; }
+        .mv-block h3 { font-family: "lora", serif; font-weight: 700; color: #fff; font-size: 32px; margin-bottom: 20px;}
+        .mv-block p { line-height: 1.7; font-size: 17px; color: rgba(255,255,255,0.8); }
+
+
+/* OUR_VALUE */
+
+.services { padding: 80px 5%; font-family: "poppins", sans-serif; color: #222;  box-sizing: border-box;}
+        .services-intro { text-align: center; max-width: 700px; margin: 0 auto 50px auto; }
+        .services-intro h2 { color: gold; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; }
+        .services-intro h3 { font-size: 40px; margin: 15px 0; }
+        .services-intro p { font-family: "lora", serif; font-size: 18px; color: var(--light-text); }
 .services-imgText{
     display: flex;
     gap: 50px;
@@ -418,16 +360,16 @@ a { text-decoration: none; }
     display: block;
     margin: 60px 0px 0px 0px;
     gap: 80px;
-    width: 40%;
+    /* width: 40%; */
     font-family: "poppins", sans-serif ;
     font-size: 20px;
     text-align: left;
 }
 .services-text p{
-    font-size: 20px;
-    width: 100%;
+    font-size: 24px;
+    /* width: 100%; */
     line-height: 1.7em;
-    font-family: "lora", serif;
+    font-family: "poppins", serif;
 }
 .services-text h4{
     color: #135a37;
@@ -440,37 +382,8 @@ a { text-decoration: none; }
 }
 .services-img img{
     border-radius: 25px;
-    width: 650px;
+    width: 600px;
     height: 400px;
-}
-/* ----------------------------------------------------------------- */
-/* SERVICES IMAGE/TEXT BLOCK ANIMATION: Alternating Slide-In         */
-/* ----------------------------------------------------------------- */
-
-/* Target the individual repeating service blocks */
-.services-imgText {
-    opacity: 0;
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Odd blocks (1st, 3rd, etc.) - Image on Right, Text on Left */
-/* These blocks should slide in from the LEFT */
-.services-contain .services-imgText:nth-child(odd) {
-    transform: translateX(-50px);
-    transition-delay: 0.3s; 
-}
-
-/* Even blocks (2nd, 4th, etc.) - Image on Left, Text on Right */
-/* These blocks should slide in from the RIGHT */
-.services-contain .services-imgText:nth-child(even) {
-    transform: translateX(50px);
-    transition-delay: 0.3s;
-}
-
-/* Ensure the elements reset their transform when visible */
-.services-imgText.is-visible {
-    transform: translate(0, 0) !important;
-    opacity: 1;
 }
 .verve-icon{
     background-color: #135a37; border-radius: 15px;
@@ -489,22 +402,15 @@ a { text-decoration: none; }
     gap: 30px; 
     padding: 0px 10px;
 }
-.verve-icon i{
-    color: white;
-    font-size: 4em;
-    margin-top: 10px;
-}
-.verve-icon h4{
-    font-size: 20px;
-    /* margin-bottom: 10px; */
-    color: #fff;
-}
-.verve-icon p{
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 10px;
-}
-    
+.verve-icon:hover { transform: translateY(-10px); }
+    .verve-icon i { color: white; font-size: 4em; }
+    .verve-icon h4 { font-size: 22px; font-weight: 600; color: white; }
+    .verve-icon p { font-size: 15px; color: white; line-height: 1.6; }
+
+.our-impact{
+    width: 100%;
+    flex-direction: row;
+}  
 .our-impact .p-text{
     margin: 10px 90px;
     text-align: center;
@@ -517,6 +423,8 @@ a { text-decoration: none; }
     /* box-shadow: 50em 34px 88px  green ; */
     padding:45px; 
     font-family: "poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 900;
     background-color:white;
 }
 .grid-cols-2 .text-center .text-5xl{
@@ -525,7 +433,13 @@ a { text-decoration: none; }
     font-weight: 900;
 }
 .grid{
-    display: flex;text-align: center; margin: 20px 90px; gap: 40px;
+    display: flex;
+    text-align: center;
+    margin: 20px 90px;
+    gap: 40px;
+    /* Add flex-wrap: wrap; here to ensure items wrap onto the next line */
+    /* flex-wrap: wrap;  */
+    justify-content: center; /* Add this to center the items if they don't fill the row */
 }
 .text-green { color: var(--dark-green); }
 
@@ -597,6 +511,9 @@ footer li{
 
 /* --- Tablet (Max Width 992px) --- */
 @media (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
     /* Header & Navigation */
     .floating-nav-container {
         display: none; /* Hide desktop nav */
@@ -607,60 +524,63 @@ footer li{
     .menu-toggle {
         display: block; /* Show the toggle button */
     }
-    .main-header {
-        padding: 15px 5%;
-    }
-
-    /* Hero Section */
     .hero-section {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 50px;
+        flex-direction: column; text-align: center; padding-top: 50px;
+        gap: 50px;
     }
-    .hero-section .hero-prtOne, .hero-img {
-        width: 100%;
-        max-width: 600px;
-    }
-    .hero-section h1 {
-        font-size: 3rem;
-    }
-    .hero-btns {
-        justify-content: center;
-        gap: 15px;
-    }
-    .btn-outline {
-        margin-left: 0;
-    }
+    .hero-section .hero-prtOne, .hero-img { width: 100%; max-width: 600px; }
+    .hero-section h1 { font-size: 3rem; }
+    .hero-img{max-width: 350px; margin-left: auto;}
+    .hero-btns { justify-content: center; margin-bottom: 10px; flex-direction: column; gap: 90em; }
+    .hero-img::before { left: 52%; transform: translateX(-50%); width: 100%;}
 
     /* About Section */
-    .about-details {
-        grid-template-columns: 1fr; /* Stack columns */
-        margin: 20px 5%;
-        text-align: left;
-    }
-    .reveal-element0-1 {
-        text-align: left;
-    }
-    .reveal-element-delay-0-2 {
-        text-align: left;
-    }
-    .quote {
-        margin: 15px 0;
-    }
+    #about .about-hero { flex-direction: column; text-align: center; gap: 30px;}
+    .about-hero-text { text-align: center; }
+    .about-details { grid-template-columns: 1fr; margin: 40px auto; }
+    
 
+    /* Our Values */
+    .about-core { flex-direction: column; align-items: center; text-align: center;}
+    .our-value-context { text-align: center; max-width: 600px; margin-bottom: 30px;}
+    .our-value-context p { margin: 10px auto; }
+    .about-list .items-start { text-align: left; }
+    .main-flex{
+        flex-direction: column;
+        padding: 10px 5%;
+        margin: 20px auto;
+        flex-wrap: wrap; /* Enable wrapping */
+        justify-content: center;
+        opacity: 1;
+    }
     /* Multi-Column Layouts (Value, Services, Impact, Partners) */
-    .main-flex, .serve, .grid {
+     .serve, .grid {
         padding: 10px 5%;
         margin: 20px auto;
         flex-wrap: wrap; /* Enable wrapping */
         justify-content: center;
     }
-    .main-img {
-        flex: 1 1 45%; /* Two per row */
+    .main-img{
+        flex: 1 1 300px; /* Allow flexibility */
         max-width: 350px;
+        position: relative;
+        box-sizing: border-box;
+        /* Common styles for the bg images */
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 400px; /* Fixed height for consistency */
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     .verve-icon {
-        flex: 1 1 45%; /* Two per row */
+        flex: 1 1 45%;
     }
     .grid-cols-2 .text-center {
         flex: 1 1 45%; /* Two per row */
@@ -669,7 +589,44 @@ footer li{
     .prt-img {
         flex: 1 1 45%; /* Two per row */
     }
+    .our-value-context{
+    width: 100%;
+    padding-right: 10px;
+    text-align: left;
+    margin-left: auto;
+    }
+    .our-value-context h2{
+        color: gold
+    }
+    .our-value-context p{
+        text-align: left; margin: 0px 0px 5px 20px; font-size: 25px;width: 100%;
+    }
+     .services-imgText {
+    width: auto;
+    flex-direction: column;
+    gap: 1px;
+  }
 
+  .services-text {
+    flex-direction: column;
+    margin: auto;
+    gap: 1px;
+    flex: 1;
+    text-align: center;
+  }
+  .services-text h4{
+    font-size: 24px;
+  }
+  .services-text p{
+    font-size: 18px;
+  }
+
+  .services-img img{
+    flex: 1;
+    width: auto;
+    height: auto;
+    /* padding: 20px; */
+  }
     /* Footer */
     .footer-main {
         flex-direction: column;
@@ -687,40 +644,43 @@ footer li{
     .footer-contact .footer-nav li {
         margin: 0 10px 8px 10px;
     }
+    .main-flex, .serve, .grid, #partners .main-flex {
+        gap: 15px;
+        /* Ensure all multi-item containers are centered on small screen */
+        justify-content: center;
+    }
+    
+    /* Forces single column for images, values, and services */
+    .main-img, .verve-icon, .prt-img {
+        flex: 1 1 100%; /* Single column */
+        max-width: 95%; 
+    }
 }
-
 /* --- Mobile (Max Width 600px) --- */
 @media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
     /* Top Bar */
     .top-bar {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        font-size: 0.8rem;
+        flex-direction: row;
+        align-items: left;
+        gap: 1px;
+        font-size: 0.2rem;
     }
     .top-bar-left span {
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
     .top-bar-right {
-        margin-top: 5px;
+        /* margin-top: 5px; */
     }
-
-    /* Hero Section */
-    .hero-section h1 {
-        font-size: 2.2rem;
-    }
-    .hero-btns {
-        flex-direction: column;
-        gap: 10px;
-    }
+    
+    
 
     /* About Section */
-    .about-details {
-        margin: 20px 2%;
-    }
-    .about h3 {
-        font-size: 1.8rem;
-    }
+    .about h3.section-title, .services-intro h3 { font-size: 28px; }
+    .quote { font-size: 18px; padding: 20px; }
+    .our-value-context p { font-size: 28px; }
 
     /* Multi-Column Layouts (Single Column) */
     .main-flex, .serve, .grid, #partners .main-flex {
@@ -733,11 +693,158 @@ footer li{
     .main-img {
         width: 100%;
     }
-    .grid {
-        margin: 20px 5%;
-        padding: 20px;
+    /* Multi-Column Layouts (Single Column - **CHANGE THIS SECTION**) */
+    .main-flex, .serve, .grid, #partners .main-flex {
+        gap: 15px;
+    }
+    
+    /* TARGETING THE IMPACT METRIC BLOCKS */
+    /* We change the flex basis from 100% to a value that allows two per row */
+    .main-img, .verve-icon, .prt-img {
+        /* These will still stack (100% width) */
+        flex: 1 1 100%; 
+        max-width: 95%; 
+    }
+    
+    /* NEW RULE FOR THE IMPACT BLOCKS (.grid-cols-2 .text-center) */
+    .grid-cols-2 .text-center {
+        flex: 1 1 45%; /* Set the basis to less than 50% to account for gap */
+        max-width: 48%; /* Restrict max width */
+        margin: 0; /* Clear any conflicting margins */
+    }
+
+    .main-img {
+        width: 100%;
     }
     .our-impact .p-text {
         margin: 10px 5%;
+    }
+    
+   
+}
+/* Initial state */
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: 0.8s ease;
+}
+
+/* Left text starts from left */
+.slide-left {
+  transform: translateX(-60px);
+}
+
+/* When visible */
+.slide-left.visible,
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.services-text {
+  transition-delay: .1s;
+}
+
+.services-img {
+  transition-delay: .2s;
+}
+.pop {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.6s cubic-bezier(.175,.885,.32,1.275);
+}
+
+.pop.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-element-delay-0-1 { transition-delay: 0.1s; }
+.reveal-element-delay-0-2 { transition-delay: 0.2s; }
+.reveal-element-delay-0-3 { transition-delay: 0.3s; }
+.reveal-element-delay-0-4 { transition-delay: 0.4s; }
+/* --- Mobile (Max Width 600px) --- */
+@media (max-width: 600px) {
+
+
+    /* Top Bar */
+    .top-bar {
+        flex-direction: row;
+        align-items: left;
+        font-size: 0.6rem;
+    }
+    .top-bar-left span {
+        margin-right: 1px;
+    }
+    .top-bar-right {
+        /* margin-top: 5px; */
+    }
+
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+     .btn-dark-green{
+        margin-bottom: 1em;
+     }
+
+    /* About Section */
+    .about-details {
+        margin: 20px 2%;
+    }
+    .about h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Multi-Column Layouts (All previously 100% width) */
+    .main-flex, .serve, .grid, #partners .main-flex {
+        gap: 15px;
+        /* Ensure all multi-item containers are centered on small screen */
+        justify-content: center;
+    }
+    
+    /* Forces single column for images, values, and services */
+    .main-img, .verve-icon, .prt-img {
+        flex: 1 1 100%; /* Single column */
+        max-width: 95%; 
+    }
+    .main-img {
+        width: 100%;
+    }
+    
+    /* 🎯 THE FIX: Force IMPACT blocks to stay two per row */
+    /* Target the text-center children specifically inside the .grid container */
+    .grid .text-center {
+        flex: 1 1 45%; /* Two per row (45% + 45% leaves 10% for the gap) */
+        max-width: 48%; /* Ensures they don't stretch too wide */
+        padding: 20px; /* Reduced padding for smaller screens */
+        box-sizing: border-box; /* Crucial: ensures padding doesn't push the width over 100% */
+        margin: 5px 0; /* Small vertical margin for spacing */
+    }
+    /* END OF FIX */
+    
+    .grid {
+        margin: 20px 5%;
+        padding: 20px 0;
+    }
+    .our-impact .p-text {
+        margin: 10px 5%;
+    }
+    
+    .services-imgText {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .services-text {
+        flex: 1;
+        text-align: center;
+    }
+
+    .services-img img{
+        flex: 1;
+        /* Width is often the issue here */
+        max-width: 450px; 
+        width: 100%; /* Added this to ensure responsiveness */
     }
 }

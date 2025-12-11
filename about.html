@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <div class="top-bar">
+        <div class="top-bar">
         <div class="top-bar-left">
             <span><i class="fas fa-map-marker-alt"></i> Ondo State, Nigeria</span>
             <span><i class="far fa-envelope"></i> </span>
@@ -31,15 +31,20 @@
             <img src="https://placehold.co/120x60/png?text=Agri+Logo" alt="Agri Innovation Hub Logo" class="logo-img">
         </div>
 
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        
         <div class="floating-nav-container" id="stickyNav">
             <nav>
-                <a href="./index.html" class="active">Home</a>
-                <a href="./about.html">About</a>
+                <a href="./index.html">Home</a>
+                <a href="./about.html"  class="active">About</a>
                 <a href="./services.html">Services</a>
-                <a href="#">Blog</a>
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
+                <a href="./contact.html">Contact</a>
             </nav>
+        </div>
+        
+        <div class="mobile-nav-menu" id="mobileMenu">
         </div>
 
         <div class="header-cta">
@@ -47,94 +52,93 @@
         </div>
     </header>
 
-    <section class="hero-section">
-      
-    </section>
 
-    <section style="background: #f4f7f6;">
-        <!-- <h2>Scroll down to see the sticky effect...</h2> -->
-      
-    </section>
+    <section class="hero-about">
+   
+    
 
-    <section id="about" class="about">
-        <div class="text-center mb-12">
-            <h2 class="reveal-element">🌱 About Us</h2>
-            <h3 class="reveal-element" style="font-weight: 700;">Bridging the Gap Between Farmers and Opportunity</h3>
-        </div>
-        
-        <div class="about-details">
-            <div class="reveal-element reveal-element0-1">
-                <p class="text-lg font-body mb-6">
-                    <span style="color: green;">MyFarmAccelerator </span> was born from the realization that farmers in Africa struggle not from lack of effort, but from lack of access. We started in Akure, Nigeria, with a simple goal: to connect smallholder farmers to the resources, technology, and markets they need to grow sustainably.
-                </p>
-                <blockquote class="quote">
-                    “We’re bridging the gap between farmers and opportunity — from soil to marketplace.”
-                </blockquote>
-                <p class="Promise" style="font-weight: 600;">
-                    Brand Promise: To simplify the farming journey — from planting to profit.
-                </p>
-            </div>
+        <section id="about" class="about">
             
-            <!-- Core Values Card -->
-            <div class=" reveal-element reveal-element-delay-0-2">
-                <h4 class="">Core Values</h4>
-                <ul class="space-y-4 text-md">
-                    <li class="flex items-start" ></li>        
-                        <span class="text-secondary-gold mr-3">
-                            <!-- Sustainability Icon -->
-                            <svg class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </span> 
-                        <div><strong class="font-heading">Sustainability:</strong> Every process supports environmental balance and responsible growth.</div>
-                    </li>
-                    <li class="flex items-start" >
-                        <span class="text-secondary-gold mr-3">
-                            <!-- Innovation Icon -->
-                            <svg class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                        </span> 
-                        <div><strong class="font-heading">Innovation:</strong> We harness technology to solve deep-rooted agricultural challenges.</div>
-                    </li>
-                    <li class="flex items-start" >
-                        <span class="text-secondary-gold mr-3">
-                            <!-- Empowerment Icon -->
-                            <svg class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </span> 
-                        <div><strong class="font-heading">Empowerment:</strong> We help farmers grow from subsistence to profitability.</div>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-secondary-gold mr-3">
-                            <!-- Transparency Icon -->
-                            <svg class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                        </span> 
-                        <div><strong class="font-heading">Transparency:</strong> We ensure traceable, fair-value trade.</div>
-                    </li>
-                </ul>
+
+            <div class="about-hero reveal-element reveal-element-delay-0-2">
+                 <img src="https://placehold.co/500x350/e0e0e0/333?text=About+Us+Team" alt="Our Team" class="about-hero-img">
+                 <div class="about-hero-text">
+                     <h3>Bridging the Gap Between Farmers and Opportunity</h3>
+                     <p class="text-lg font-body mb-6">
+                        <span style="color: green;">MyFarmAccelerator </span> was born from the realization that farmers in Africa struggle not from lack of effort, but from lack of access. We started in Akure, Nigeria, with a simple goal: to connect smallholder farmers to the resources, technology, and markets they need to grow sustainably.
+                    </p>
+                     <a href="./services.html">View Our Services <i class="fas fa-arrow-right" style="font-size: 14px; margin-left: 5px;"></i></a>
+                 </div>
             </div>
-        </div>
-        <div class="about-mini">
-            <h2>Our Driving Force :</h2>
-        
-        </div>
-        <section class="mv-section">
-        
-        <div class="mv-block">
-            <div class="cont-block">
-                <i class="fa-solid fa-crosshairs big-icon"></i>
-            <p>our mission</p>
-            <h3>Our Grand Mission</h3>
-            <p>To build a sustainable agricultural ecosystem that empowers farmers and ensures food security across Africa.</p>
+
+            <div class="about-details">
+                
+                 <div class="quote reveal-element reveal-element-delay-0-2">
+                     "“We’re bridging the gap between farmers and opportunity  from soil to marketplace.”
+                 </div>
+                 <div class="reveal-element-delay-0-2 promise-box reveal-element reveal-element-delay-0-4">
+                    <h4>Our Promise To You</h4>
+                    <p class="Promise">Brand Promise: To simplify the farming journey from planting to profit.</p>
+                 </div>
             </div>
-            
-        </div>
-        <div class="mv-block">
-            <i class="fa-solid fa-bullseye big-icon"></i>
-            <h3>Our Vision</h3>
-            <p>To connect farmers with resources, knowledge, and markets through innovative technology and strategic partnerships.</p>
-            
-        </div>
         </section>
 
+        
+
+        <section class="mv-section">
+            <div class="mv-block reveal-element slide-left">
+                <i class="fas fa-bullseye big-icon"></i>
+                <h3>Our Mission</h3>
+                <p>To build a sustainable agricultural ecosystem that empowers farmers and ensures food security across Africa.</p>
+            </div>
+            <div class="mv-block reveal-element reveal-element-delay-0-2 slide-right">
+                <i class="fas fa-globe-americas big-icon"></i>
+                <h3>Our Vision</h3>
+                <p>To connect farmers with resources, knowledge, and markets through innovative technology and strategic partnerships.</p>
+            </div>
+        </section>
+
+
+        <section class="about-core">
+            <div class="our-value-context reveal-element slide-left">
+                 <h2>OUR CORE VALUES</h2>
+                 <p>Principles That Define Our Actions & Shape Our Future.</p>
+            </div>
+            <ul class="about-list slide-right">
+                 <li class="items-start">
+                    <i class="fa-regular fa-clock"></i>
+                    <div class="font-heading">
+                        <h4>Sustainability</h4>
+                        <p>Every process supports environmental balance and responsible growth</p>
+                    </div>
+                 </li>
+                 <li class="items-start">
+                    <i class="fas fa-handshake"></i>
+                    <div class="font-heading">
+                        <h4>Innovation</h4>
+                        <p>We harness technology to solve deep-rooted agricultural challenges.</p>
+                    </div>
+                 </li>
+                 <li class="items-start">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <div class="font-heading">
+                        <h4>Empowerment</h4>
+                        <p> We help farmers grow from subsistence to profitability.</p>
+                    </div>
+                 </li>
+                 <li class="items-start">
+                    <i class="fa-regular fa-eye"></i>
+                    <div class="font-heading">
+                        <h4>Transparency</h4>
+                        <p>We ensure traceable, fair-value trade.</p>
+                    </div>
+                 </li>
+            </ul>
+        </section>
+
+
         <section>
-            <section class="about our-impact">
+        <section class="about our-impact">
         <div class="text-center mb-12">
             <h2 class="reveal-element" style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">🌱 Our Impact</h2>
             <h3 class="reveal-element" style="font-weight: 700;">Driving Agricultural Transformation</h3>
