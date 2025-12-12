@@ -945,7 +945,7 @@ footer li{
 
     .mobile-nav-menu {
         position: fixed;
-        top: 70px; /* adjust based on header height */
+        top: 100px; /* adjust based on header height */
         left: 0;
         right: 0;
         width: 100%;
