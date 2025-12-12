@@ -938,7 +938,8 @@ footer li{
 @media (max-width: 992px) {
     .main-header {
         position: sticky;
-        top: 15px;
+        top: 0px;
+        padding: 30px 0px 20px 0px;
         z-index: 1000;
         background: #fff;
     }
