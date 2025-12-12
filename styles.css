@@ -514,9 +514,9 @@ footer li{
 
 /* Style for the hidden mobile menu */
 .mobile-nav-menu {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    top: 100%; /* Position below the header */
+    top: 100%;
     right: 5%;
     width: 90%;
     background-color: #fff;
@@ -530,13 +530,12 @@ footer li{
     padding: 12px 20px;
     color: #333;
     font-weight: 500;
-    /* border-bottom: 1px solid #eee; */
 }
 .mobile-nav-menu a:last-child {
     border-bottom: none;
 }
 .mobile-nav-menu.active {
-    display: block; /* Shown when JS toggles this class */
+    display: block; 
 }
 
 
@@ -551,14 +550,14 @@ footer li{
     }
     /* Header & Navigation */
     .floating-nav-container {
-        display: none; /* Hide desktop nav */
+        display: none;
     }
     
     .header-cta {
-        display: none; /* Hide CTA button on smaller screens */
+        display: none; 
     }
     .menu-toggle {
-        display: block; /* Show the toggle button */
+        display: block;
     }
     .hero-section {
         flex-direction: column; text-align: center; padding-top: 50px;margin: auto;align-items: center;
@@ -586,7 +585,7 @@ footer li{
         flex-direction: column;
         padding: 10px 5%;
         margin: 20px auto;
-        flex-wrap: wrap; /* Enable wrapping */
+        flex-wrap: wrap;
         justify-content: center;
         opacity: 1;
     }
@@ -599,19 +598,16 @@ footer li{
         backdrop-filter: blur(15px);
         font-weight: 600;
     }
-    /* Multi-Column Layouts (Value, Services, Impact, Partners) */
      .serve, .grid,.partners-flex {
         padding: 10px 5%;
         margin: 20px auto;
-        flex-wrap: wrap; /* Enable wrapping */
+        flex-wrap: wrap;
         justify-content: center;
     }
     .main-img{
-        flex: 1 1 300px; /* Allow flexibility */
-        /* max-width: 350px; */
+        flex: 1 1 300px; 
         position: relative;
         box-sizing: border-box;
-        /* Common styles for the bg images */
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
@@ -619,7 +615,7 @@ footer li{
         border-bottom-left-radius: 25px;
         border-top-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        height: 400px; /* Fixed height for consistency */
+        height: 400px; 
         padding: 100px 0px 0px 0px;
         display: flex;
         flex-direction: column;
@@ -630,11 +626,11 @@ footer li{
     }
     
     .grid .text-center {
-        flex: 1 1 45%; /* Two per row (45% + 45% leaves 10% for the gap) */
-        max-width: 48%; /* Ensures they don't stretch too wide */
-        padding: 20px; /* Reduced padding for smaller screens */
-        box-sizing: border-box; /* Crucial: ensures padding doesn't push the width over 100% */
-        margin: 5px 0; /* Small vertical margin for spacing */
+        flex: 1 1 45%; 
+        box-sizing: border-box;
+        max-width: 48%;
+        padding: 20px;
+        margin: 5px 0;
     }
     .prt-img {
         background: white;
@@ -673,7 +669,6 @@ footer li{
     }
     .value p{
         width: 350px;
-        /* font-size: 100px; */
     }
     .our-impact .p-text{font-family: "lora", serif; font-size: 18px; color: var(--light-text); 
 }
@@ -753,34 +748,24 @@ footer li{
     .about h3.section-title, .services-intro h3 { font-size: 28px; }
     .quote { font-size: 18px; padding: 20px; }
     .our-value-context p { font-size: 28px; }
-
-    /* Multi-Column Layouts (Single Column) */
     .main-flex, .serve, .grid, #partners .partners-flex {
         gap: 15px;
     }
     .main-img, .verve-icon, .grid-cols-2 .text-center, .partners-flex .prt-img {
-        flex: 1 1 100%; /* Single column */
+        flex: 1 1 100%;
         max-width: 95%; 
     }
     .main-img {
         width: 100%;
     }
-    /* Multi-Column Layouts (Single Column - **CHANGE THIS SECTION**) */
     .main-flex, .serve, .grid, #partners .partners-flex {
         gap: 15px;
     }
-    
-    /* TARGETING THE IMPACT METRIC BLOCKS */
-    /* We change the flex basis from 100% to a value that allows two per row */
     .main-img, .verve-icon, .partners-flex .prt-img {
-        /* These will still stack (100% width) */
         flex: 1 1 100%; 
         max-width: 95%; 
     }
     
-    /* NEW RULE FOR THE IMPACT BLOCKS (.grid-cols-2 .text-center) */
-    
-
     .main-img {
         width: 100%;
     }
@@ -788,11 +773,11 @@ footer li{
         margin: 10px 5%;
     }
     .grid .text-center {
-        flex: 1 1 45%; /* Two per row (45% + 45% leaves 10% for the gap) */
-        max-width: 48%; /* Ensures they don't stretch too wide */
-        padding: 20px; /* Reduced padding for smaller screens */
-        box-sizing: border-box; /* Crucial: ensures padding doesn't push the width over 100% */
-        margin: 5px 0; /* Small vertical margin for spacing */
+        flex: 1 1 45%;
+        max-width: 48%; 
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 5px 0; 
     }
     .partners-flex {
         display: grid;
