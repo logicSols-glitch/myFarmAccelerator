@@ -69,7 +69,7 @@ a { text-decoration: none; }
     margin-right: 15px; 
     color: #333;
 }
-.logo-img { height: 50px; }
+.logo-img { width: 150px;mix-blend-mode: multiply; margin-top: -20px; }
 
 
 /* --- The Floating Nav Container (Default State) --- */
@@ -216,8 +216,13 @@ a { text-decoration: none; }
 }
 .img-bg3{
     background-image: url(./image/woman.jpg);
-    padding: 370px 30px 80px 1px;
+
+    /* padding: 370px 30px 10-0px 1px; */
     
+}
+.img-bg3 .word-details{
+    /* color: red; */
+    margin-top: 3.5em;
 }
 .main-img .img-caption h2{
     margin: 0px 0px 20px 10px;
@@ -310,7 +315,7 @@ a { text-decoration: none; }
         .value{
             /* flex: 1; */
             margin-left: 9em;
-            max-width: 400px;
+            /* max-width: 400px; */
             text-align: left;
             padding-bottom: 20px;
         }
@@ -366,21 +371,18 @@ a { text-decoration: none; }
 .services-imgText{
     display: flex;
     gap: 50px;
-    /* padding: 5px; */
     margin: 90px 3px;
 }
 .services-text{
     display: block;
     margin: 60px 0px 0px 0px;
     gap: 80px;
-    /* width: 40%; */
     font-family: "poppins", sans-serif ;
     font-size: 20px;
     text-align: left;
 }
 .services-text p{
     font-size: 24px;
-    /* width: 100%; */
     line-height: 1.7em;
     font-family: "poppins", serif;
 }
@@ -389,9 +391,6 @@ a { text-decoration: none; }
     margin-bottom: 25px;
     font-size: 40px;
     font-family: "poppins", sans-serif;
-}
-.services-img{
-    /* width: 60%; */
 }
 .services-img img{
     border-radius: 25px;
@@ -403,7 +402,6 @@ a { text-decoration: none; }
     text-align: center;
     display: grid;
     gap: 20px; 
-    /* width: 500px; */
     border: 1px solid #135a37;
     padding: 10px 10px;
     flex-wrap: wrap;
@@ -428,8 +426,8 @@ a { text-decoration: none; }
 .our-impact h2{color: gold; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase;}
 .our-impact h3{font-size: 40px; margin: 15px 0;} 
 .our-impact .p-text{
-   font-family: "lora", serif; font-size: 20px; color: var(--light-text);padding: 20px;width: 80%;
-    align-items: center;margin: auto;line-height: 1.5em;
+   font-family: "lora", serif; font-size: 20px;padding: 20px;width: 80%;
+    align-items: center;line-height: 1.5em;
 }
 
 .grid-cols-2 .text-center{
@@ -437,7 +435,6 @@ a { text-decoration: none; }
     box-shadow: 5px 4px 8px  #ebebeb ;
     border-radius: 25px;
     color: #135a37;
-    /* box-shadow: 50em 34px 88px  green ; */
     padding:45px; 
     font-family: "poppins", sans-serif;
     font-size: 13px;
@@ -445,7 +442,6 @@ a { text-decoration: none; }
     background-color:white;
 }
 .grid-cols-2 .text-center .text-5xl{
-    /* padding: 0px 10px; */
     font-size: 40px;
     font-weight: 900;
 }
@@ -454,32 +450,30 @@ a { text-decoration: none; }
     text-align: center;
     margin: 20px 90px;
     gap: 40px;
-    /* Add flex-wrap: wrap; here to ensure items wrap onto the next line */
-    /* flex-wrap: wrap;  */
-    justify-content: center; /* Add this to center the items if they don't fill the row */
+    justify-content: center;
 }
 .text-green { color: var(--dark-green); }
 .partners-flex{
     display: flex;
     text-align: center;
-    margin: 20px 90px;
-    gap: 40px;
+    margin: 20px 50px;
+    gap: 80px;
     justify-content: center;
 }
 .prt-img{
+    display: grid;
+    gap: 2em;
+    width: 50%;
     border: 10px solid white;
-    /* box-shadow: 5px 4px 8px  #ebebeb ; */
     border-radius: 15px;
     color: #135a37;
-    /* box-shadow: 50em 34px 88px  green ; */
-    /* padding:45px;  */
     font-family: "poppins", sans-serif;
-    /* font-size: 13px; */
-    /* font-weight: 900; */
-    /* background-color:white; */
     color: #333;
-    box-shadow: 5px 2px 5px #cac9c9;
+    box-shadow: 0.5px 2px 5px #cac9c9;
 }
+.prt-img img{
+    width: 100%;
+} 
 
 #partners{
     background-color: #ffffff;
@@ -535,7 +529,7 @@ footer li{
     padding: 12px 20px;
     color: #333;
     font-weight: 500;
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
 }
 .mobile-nav-menu a:last-child {
     border-bottom: none;
@@ -558,6 +552,7 @@ footer li{
     .floating-nav-container {
         display: none; /* Hide desktop nav */
     }
+    
     .header-cta {
         display: none; /* Hide CTA button on smaller screens */
     }
@@ -581,6 +576,7 @@ footer li{
     
 
     /* Our Values */
+    
     .about-core { flex-direction: column; align-items: center; text-align: center;}
     .our-value-context { text-align: left; max-width: 600px; margin-bottom: 30px; margin: auto; }
     .our-value-context p { margin: 10px auto; }
@@ -599,7 +595,8 @@ footer li{
         border-top: 1px solid rgba(167, 166, 163, 0.5);
         width: auto;
         background-color: rgba(102, 102, 100, 0.1);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(15px);
+        font-weight: 600;
     }
     /* Multi-Column Layouts (Value, Services, Impact, Partners) */
      .serve, .grid,.partners-flex {
@@ -639,12 +636,13 @@ footer li{
         margin: 5px 0; /* Small vertical margin for spacing */
     }
     .prt-img {
-        /* width: 100%; */
-        /* Optional: Add a background or shadow to make them pop on mobile */
         background: white;
+        width: auto;
         border-radius: 12px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
+    .prt-img img{
+        width: 100%;
+    } 
 
     .prt-img h4 {
         font-size: 16px;
@@ -657,7 +655,7 @@ footer li{
         padding: 0 15px;
     }   
     .our-value-context{
-    width: 80%;
+    width: 100%;
     text-align: left;
     }
     
@@ -668,13 +666,21 @@ footer li{
     .our-value-context p{
         text-align: left; margin: 0px 0px 5px 20px; font-size: 25px;width: 100%;
     }
-
-     .services-imgText {
+    .value{
+        margin-left: 1em;
+        padding-bottom: 20px;
+    }
+    .value p{
+        width: 350px;
+        /* font-size: 100px; */
+    }
+    .our-impact .p-text{font-family: "lora", serif; font-size: 18px; color: var(--light-text); 
+}
+    .services-imgText {
     width: auto;
     flex-direction: column;
     gap: 1px;
-  }
-
+    }
   .services-text {
     flex-direction: column;
     margin: auto;
